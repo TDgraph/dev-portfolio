@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- link to styling with bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- carousel -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <!-- link to styling with Css style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/e152785f1e.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="width: 100%;">
+    <div>
+        <div class="">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse position-sticky pt-3 sidebar-sticky bottom-0 top-0 ">
+            <div class="text-white mt-4">
+                <div class="image-con-p text-white">
+                        <div class="image-con rounded-circle">
+                            <img src="./assets/profile-pic.png" alt="" class="profile-img rounded-circle">
+                        </div>
+                </div>
+
+                <!-- Linking the contact icon -->
+                <div class="text-center">
+                    <h2 class="py-2 username">Temitope Douglas</h2>
+                    <span class=" m-1 icon-box rounded-3"><a href="https://twitter.com/DouglasTaymee" class="text-white"><i class="fa-brands fa-twitter"></i></a></span>  
+                    <span class=" m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-facebook-f"></i></a></span>  
+                    <span class="m-1 icon-box rounded-3"><a href="https://twitter.com/DouglasTaymee" class="text-white"><i class="fa-brands fa-instagram"></i></a></span>  
+                    <span class="m-1 icon-box rounded-3"><a href="https://www.github.com/TDgraph" class="text-white"><i class="fa-brands fa-github"></i></a></span>
+                    <span class="m-1 icon-box rounded-3"><a href="https://linkedin.com/in/temitope-douglas" class="text-white"><i class="fa-brands fa-linkedin"></i></a></span>  
+
+                </div>
+
+                <!-- the navigation bar -->
+
+                <ul class="nav flex-column mt-4 ps-4">
+                    <li class="nav-items mt-4 text-white">
+                        <a class='nav-link' href="" onclick="goTo(1)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-house pe-3"></i>
+                            <span class="">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section2" onclick="goTo(2)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" >
+                            <i class="fa-solid fa-user-tie pe-3"></i>
+                            <span class="">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section3" onclick="goTo(3)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-regular fa-file pe-3"></i>
+                            <span class="">Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section4" onclick="goTo(4)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-server pe-3"></i>
+                            <span class="">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white " onclick="goTo(5)">
+                        <a class="nav-link" href="#section8" >
+                            <i class="fa-solid fa-server pe-3"></i>
+                        <span class="">Contact</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+               
+
+            </div>
+            </nav>
+        
+            <main class="col-md-9  info">
+                <nav class="d-flex port">
+                    <h3 class="text-white px-3 py-2"><i><b>Temitope Douglas</b></i></h3>
+                    <button class="navbar-toggler position-absolute d-md-none collapsed open_btn " type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white"></i></button>     
+                </nav>
+                <section class="section1 " id="firstsec">
+                    <div class="darker"></div>
+                    <div class="container head">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="head-text text-white ">
+                                        <div >
+                                            <h1 class="head-name">Temitope Douglas</h1>
+                                            <h1 class="profession">I'm <span class="auto-type"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center"><i class="fa-solid fa-angles-down arr-d text-white" onclick="goTo(2)"></i></div>
+
+                </section>
+                <section class="section2 reveal fade-bottom py-4 px-3" id="section2">
+                    <div>
+                        <div class="about-head"><h3 class="fw-bolder">About</h3></div>
+                        <p>
+                            I am an innovative and result-oriented Full-stack software engineer with a professional experience that spans across 2 years working as a freelance developer
+                            for clients and organization. I enjoy building websites, software applications andITsolutions employing the MERN stack approach. I have a track record for 
+                            combining agile methods with great interpersonal skills to meet business demands and solve technical services. I have Experience in building web and mobile distributed applications with high performance and scalable capabilities.
+                        </p>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div><img src="./assets/profile-pic.png" class="shadow-lg" alt="" srcset="" style="width: 100%;"></div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <ul type="none">
+                                                    <li class="fs-6 py-2"><strong>Website: </strong>https://TDgraph.github.io/portfolio-website/</li>
+                                                    <li class="fs-6 py-2"><strong>Phone: </strong> +234 7049064012</li>
+                                                    <li class="fs-6 py-2"><strong>City: </strong> Lagos, Nigeria</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <ul type="none">
+                                                    <li class="fs-6 py-2"><strong>Degree: </strong> Bachelor</li>
+                                                    <li class="fs-6 py-2"><strong>Email: </strong> douglastemitope@gmail.com</li>
+                                                    <li class="fs-6 py-2"><strong>Status: </strong> Open to work</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p>
+                                            A data-centric engineer
+                                            with the ability to Automate and extract data on the web using Python.I have Worked across diverse domains such as FinTech, E-commerce, Real Estate, Restaurant
+                                            chain and Human Resource. Also proficient in the use of defect tracking tool Jira and Continuous Integration (CI) using Git and Docker. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section3 pt-5 px-3">
+                    <div class="">
+                        <div class="about-head"><h3 class="fw-bolder">Facts</h3></div>
+                    <p>
+                        Proficiency in command-line tools and version comtrol.
+                    </p>
+                    <p>
+                        Built dynamic, responsive and user-friendly web application leveraging my proficiency in front-end frameworks (React) and back-end technologies (NodeJs/ExpressJS with RESTful API architecture). 
+                    </p> 
+                    </div>
+                    <div class="container reveal fade-right fact-con">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                    <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                        <i class="fa-regular fa-face-smile text-white pt-2" style="font-size: 80px;"></i>
+                                    </div>
+                                    <div class="ps-3 fact-num">
+                                        <h1><b>232</b></h1>
+                                        <p>happy clients</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                        <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                            <i class="fa-solid fa-list-check pt-3 text-white" style="font-size: 70px;"></i>
+                                        </div>
+                                        <div class="ps-3 fact-num">
+                                            <h1><b>521</b></h1>
+                                            <p>Projects completed</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                        <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                            <i class="fa-regular fa-face-smile text-white pt-2" style="font-size: 80px;"></i>
+                                        </div>
+                                        <div class="ps-3 fact-num">
+                                            <h1><b>1000+</b></h1>
+                                            <p>connections</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="section4 pt-2 px-3 ">
+                    <div>
+                        <div class="">
+                            <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Skills</h3></div>
+                        <p>
+                            Proficient in a range of programming languages, including Javascript, HTML, CSS and SQL
+                        </p>
+
+                        </div>
+                        <div class="container reveal fade-bottom fact-con">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul type="none">
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>javascript</strong>
+                                                    <strong>95%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 95%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>React</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Node</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Express</strong>
+                                                    <strong>95%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 95%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>MongoDB</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul type="none">
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>HTML</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>CSS</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Python</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Adobe Photoshop</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 75%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Adobe Illustrator</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Adobe Indesign</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section5 px-3" id="section5">
+                    <div>
+                        <div class="">
+                            <div class="about-head"><h3 class="fw-bolder fs-1">Resume</h3></div>
+                        <p>
+                            This section provides an overview of my work experience, skills, educations, achievements and is meant to showcase my qualifications and suitability for a Full-stack web Developer Role.
+                        </p> 
+                        </div>
+                        <div class="col-md-12 reveal fade-bottom">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="sumary p-1 ps-3" style="border-left: 6px solid rgb(4, 63, 4);">
+                                        <div>
+                                            <div class="about-head"><h3 class="fw-bolder fs-4">summary</h3></div>
+                                        </div>
+                                        <p>
+                                            <ul>
+                                                <li> 3 years of experience as a Full-stack Web Developer(MERN).</li>
+                                                <li>API development and customization to meet business requirements of Web-Based and Client-Server applications.</li>
+                                                <li>
+                                                    Experience in all phases of SDLC life cycle.
+                                                <li>
+                                                    Backend development with Node.js, Express.js framework
+                                                </li>
+                                                <li>Experienced in API testing using Postman and Swagger.</li>
+                                                <li>
+                                                    Expert in React.js library to build and design creative and user-friendly interfaces.
+                                                </li>
+                                                <li>Proficient with relational and non-relational databases such as MySQL, MongoDB etc.
+                                                </li>
+                                                <li> Experience in tutoring and coaching aspiring software developers on the fundamentals of Frontend development.</li>
+                                                <li>
+                                                    Experience in web scraping and data extraction using beautiful soup and python programming language.
+                                                </li>
+                                                <li>
+                                                    Experience in web Automatio using Selenium and python programming language.
+                                                </li>
+                                                <li>
+                                                    Specialties: Nodemon and Javascript programming language implementingObject
+Oriented Programming(OOP), Node server, Express generator, HandleBars, ExpressMVC, Mongoose, Microservices and cloud-based integration etc .
+                                                </li>
+                                            </ul>
+                                        </p>
+                                        <div>
+                                            <div class="about-head"><h3 class="fw-bolder fs-4">Education</h3></div>
+                                        </div>
+                                        <p>
+                                            <h5 class="fw-bolder fs-5">Library and Informaton Science --- BSC.</h5>
+                                            <p>
+                                            <h6 class="fw-bolder fs-6">University of Benin</h5> 
+                                                <h6 class="fw-bolder">sept. 2018</h6>   
+                                            </p>
+                                             <div class="about-head mt-2"><h3 class="fw-bolder fs-4">Projects</h3></div>
+                                            <ul>
+                                               <li>
+                                                   <h5>Fleeks online store (E-commerce)</h5>
+                                                   <div class="pt-1">Role: fullstack developer</div>
+                                               </li>
+                                               <li>
+                                                   <h5>DBNET (File storage and sharing App)</h5>
+                                                   <div>Role: fullstack developer </div>
+                                               </li>
+                                           </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="sumary p-1 ps-3" style="border-left: 6px solid rgb(4, 63, 4);">
+                                            <div>
+                                                <div class="about-head"><h3 class="fw-bolder fs-4">Experience</h3></div>
+                                            </div>
+                                            <p>
+                                                <h5 class="fw-bold fs-5">Cyclobold Technology Ltd. , Lagos – Full-stack web Developer</h5>
+
+                                                <ul>
+                                                    <li>Build and Maintain Restful API endpoints using using Express Framework.</li>
+                                                    <li>Backend development business logic and maintenance of application server</li>
+                                                    <li>
+                                                        Liaise with stakeholders including product owner, dev team and QA analysts.
+                                                    </li>
+                                                    <li>
+                                                        Performed Web automation using Selenium web driver framework with Chrome browser driver
+                                                    </li>
+                                                    <li> 
+                                                        Performed requirement feasibility analysis and identification of tools and technologies.
+                                                    </li>
+                                                    <li>
+                                                        Ensured Scalability of frontend elements by optimizing them for loading speed and performance.
+                                                    </li>
+                                                    <li> 
+                                                        Participate in weekly presentations and standup meetings with team members
+                                                    </li>
+                                                    <li>
+                                                        Assisted in accommodating new interns by providing support and motivation.
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               
+                <section class="section8 px-5 pt-5" id="section8">
+                    <div class="pb-3">
+                        <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Contact</h3></div>
+                    <p>
+                        ♥
+                    </p> 
+                    </div>
+                    <div>
+                        <div class="container-fluid mt-3">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5  shadow-lg pt-3">
+                                        <ul type="none">
+                                            <li class="d-flex">
+                                                <div><i class="fa-sharp fa-solid fa-location-dot fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Location:</strong><br>
+                                                    Surulere, Lagos, Nigeria
+                                                </div>
+                                            </li>
+                                            <li class="d-flex pt-3">
+                                                <div><i class="fa-sharp fa-regular fa-envelope fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Email:</strong><br>
+                                                    douglastemitope@gmail.com
+                                                </div>
+                                            </li>
+                                            <li class="d-flex pt-4">
+                                                <div><i class="fa-solid fa-phone fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Tel.:</strong><br>
+                                                    +234 70 490 640 12
+                                                </div>
+                                            </li>
+                                            <li class="pt-3 pb-1">
+                                                <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=302&amp;height=263&amp;hl=en&amp;q=Randle Avenue%20Lagos+(address)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="302" height="263" frameborder="0"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-7 ">
+                                        <form class="ps-3 pt-2" method="post">
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                   <div class="pe-3">
+                                                    <label for="">Your Name</label>
+                                                    <input type="text" class="form-control" id="e-name" style="border-radius: 0;">
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <div class="">
+                                                        <label for="">Your Email</label>
+                                                        <input type="email" class="form-control" id="e-mail" style="border-radius: 0;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="form-group pt-2">
+                                                    <label for="">Subject</label>
+                                                    <input type="text" class="form-control" id="e-subject" style="border-radius: 0;">
+                                                </div>
+                                                <div class="form-group pt-2">
+                                                    <label for="">message</label>
+                                                    <textarea name="body" class="form-control" id="e-message" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center pt-4">
+                                                <button class=" btn btn-outline-success" id="sendmail" type="button" onclick="send_email()">send message</button><br>
+                                                 <small class="text-success-emphasis pt-2" id="m-success"></small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <footer class="text-white text-center">
+                    <div>
+                        <small><i class="fa-regular fa-copyright"></i> copyright by TDgraph</small><br>
+                        <small class="pt-2">designed by Temitope Douglas</small>
+                    </div>
+                </footer>
+            </main>
+        </div>
+          
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    
+    <!-- email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+    <script>
+        
+        // autotyper using typed.js
+          var typed = new Typed(".auto-type", {
+            strings: ["a developer", "a Tester", "a freelancer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            looped: true
+            })
+
+        // function for scroll aniimations
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 50;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+                }
+
+            window.addEventListener("scroll", reveal);
+            function change() {
+                reveal()
+            }
+            window.onload = reveal()
+
+        // Navigations
+            function goTo(params) {
+                switch (params) {
+                    case 1:
+                        window.location.replace("#firstsec")
+                        break;
+                    case 2 :
+                        window.location.replace("#section2")
+                        break;
+                    case 3 :
+                        window.location.replace("#section5")
+                        break;
+                    case 4 :
+                        window.location.replace("#section6")
+                        break;
+                    case 5 :
+                        window.location.replace("#section8")
+                    break;
+                    default:
+                        window.location.replace("")
+
+                        break;
+                }
+            }
+
+        // Carousel
+            $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            rewind: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateIn: true,
+            dotsEach: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        
+        
+        // email Js
+        
+        function send_email(e){
+            // e.preventDefault()
+            console.log("okay")
+            let ename = document.getElementById("e-name").value 
+            let email = document.getElementById("e-mail").value 
+            let subject = document.getElementById("e-subject").value 
+            let message = document.getElementById("e-message").value 
+
+            let templateParams = {
+                name : ename,
+                email: email,
+                subject: subject,
+                message: message
+            }
+
+            emailjs.send('service_dt8xxsc', 'template_x8tg1la', templateParams, "iPlTOH6PqzJWNT6du")
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('successfully sent')
+            document.getElementById('m-success').append("email sent ")
+            }).catch((err)=>{
+                console.log(err);
+                alert("error occurred")
+            });
+        }
+    </script>
+</body>
+</html>
